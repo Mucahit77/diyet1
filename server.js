@@ -1,18 +1,9 @@
 var express = require("express");
+var middleware = require("./middleware");
 var app 	= express();
 var PORT = 3000;
 
-var middleware = require();
-var middleware = {
-	requireAuthenticantion: function (req, res, next) {
-		console.log("Özel Route Girildi!!");
-		next();
-	},
-	logger: function (req, res, next) {
-		console.log(req.method + " " + req.originalUrl);
-		next();
-	}
-}
+
 
 //app.use(middleware.requireAuthenticantion);
 app.use(middleware.logger);
