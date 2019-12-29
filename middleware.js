@@ -1,4 +1,4 @@
-var middleware = {
+const middleware = {
     requireAuthenticantion: function (req, res, next) {
         console.log("Özel Route Girildi!!");
         next();

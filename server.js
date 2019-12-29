@@ -1,7 +1,7 @@
-var express = require("express");
-var middleware = require("./middleware");
-var app 	= express();
-var PORT = process.env.PORT || 3000;
+const express = require("express");
+const middleware = require("./middleware");
+const app 	= express();
+const PORT = process.env.PORT || 3000;
 
 
 
